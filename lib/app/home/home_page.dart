@@ -1,8 +1,12 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:routefly/routefly.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+
+  String get fullName {
+    return FirebaseAuth.instance.currentUser!.displayName!;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +15,17 @@ class HomePage extends StatelessWidget {
         title: const Text('Home'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Routefly.pop(context);
-          },
-          child: const Text('Voltar'),
+        child: Column(
+          children: [
+            Text('Bem vindo $fullName'),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                FirebaseAuth.instance.signOut();
+              },
+              child: const Text('Logout'),
+            ),
+          ],
         ),
       ),
     );
