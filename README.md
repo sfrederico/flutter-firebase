@@ -1,16 +1,29 @@
-# flutter_firebase
+# Flutter Firebase POC
 
-A new Flutter project.
+This Flutter project serves as a Proof of Concept (POC) to demonstrate various features of Firebase. It integrates authentication, real-time database, analytics, and other Firebase tools to showcase the seamless integration with Flutter.
+
+## Features
+
+1. **Firebase Authentication:**
+   - Demonstrates user authentication using Firebase Authentication.
+   - Supports sign-up, login, and logout functionalities.
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. **Clone the Repository:**
 
-A few resources to get you started if this is your first Flutter project:
+```
+git clone https://github.com/sfrederico/flutter-firebase.git
+cd flutter-firebase-poc
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Install Dependencies:**
+```
+flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. **Run the App:**
+```
+flutter run
+``````
