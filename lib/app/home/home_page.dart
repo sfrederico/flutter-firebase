@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:routefly/routefly.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -25,6 +26,18 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Logout'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Routefly.push('/reminders');
+              },
+              child: const Text('Reminder List'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Routefly.push('/reminders/add_reminder');
+              },
+              child: const Text('Add Reminder'),
+            )
           ],
         ),
       ),
