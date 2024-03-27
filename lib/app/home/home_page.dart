@@ -19,19 +19,19 @@ class HomePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Olá',
                     style: TextStyle(
                       fontSize: 30,
                     ),
                   ),
-                  SizedBox(width: 5),
+                  const SizedBox(width: 5),
                   Text(
-                    '<usuário>!',
-                    style: TextStyle(
+                    fullName,
+                    style: const TextStyle(
                       fontWeight: FontWeight.w900,
                       color: Colors.purple,
                       fontSize: 30,

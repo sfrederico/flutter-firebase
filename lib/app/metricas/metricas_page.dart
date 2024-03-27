@@ -47,15 +47,17 @@ class MetricasPage extends StatelessWidget {
               ),
               const SizedBox(height: 50),
               ElevatedButton(
-                onPressed: () {
+                onPressed: () async {
+                  const name = 'clique_botao_teste';
                   FirebaseAnalytics analytics = FirebaseAnalytics.instance;
-                  analytics.logEvent(
-                    name: 'clique_botao_teste',
+                  await analytics.logEvent(
+                    name: name,
                     parameters: <String, String>{
                       'name': 'botao_teste',
                       'full_text': 'Botão TESTE',
                     },
                   );
+                  showSnackBar(context, 'Evento "$name" registrado!');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,
@@ -71,6 +73,16 @@ class MetricasPage extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  void showSnackBar(BuildContext context, String s) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        backgroundColor: Colors.purple,
+        content: Text(s),
+        duration: const Duration(seconds: 3),
       ),
     );
   }
