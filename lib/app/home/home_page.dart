@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   String get fullName {
-    return FirebaseAuth.instance.currentUser!.displayName!;
+    return FirebaseAuth.instance.currentUser!.displayName ?? 'Usuário';
   }
 
   @override
