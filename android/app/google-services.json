@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "674153080712",
+    "firebase_url": "https://flutter-firebase-2c11f-default-rtdb.firebaseio.com",
     "project_id": "flutter-firebase-2c11f",
     "storage_bucket": "flutter-firebase-2c11f.appspot.com"
   },
@@ -19,6 +20,14 @@
           "android_info": {
             "package_name": "com.example.flutter_firebase",
             "certificate_hash": "342c014ef7e7fa6521621322bbef17655176b0c4"
+          }
+        },
+        {
+          "client_id": "674153080712-qpqcgcnakasmtra3n9gh2i6touvs3p7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_firebase",
+            "certificate_hash": "0ab15fb4cab399ad8be0a32426eaa55181580086"
           }
         },
         {

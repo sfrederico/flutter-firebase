@@ -9,14 +9,15 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-        routerConfig: Routefly.routerConfig(
-          routes: routes,
+      routerConfig: Routefly.routerConfig(
+        routes: routes,
+      ),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.purple,
         ),
-        theme: ThemeData(
-          useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.purple,
-          ),
-        ));
+      ),
+    );
   }
 }

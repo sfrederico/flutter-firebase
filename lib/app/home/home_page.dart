@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:routefly/routefly.dart';
 
 class HomePage extends StatelessWidget {
@@ -59,7 +60,7 @@ class HomePage extends StatelessWidget {
               const SizedBox(height: 50),
               ElevatedButton(
                 onPressed: () {
-                  Routefly.navigate('/metricas');
+                  Routefly.push('/metricas');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,
@@ -89,7 +90,8 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {
+                onPressed: () async {
+                  await GoogleSignIn().signOut();
                   FirebaseAuth.instance.signOut();
                 },
                 child: const Text('Logout'),

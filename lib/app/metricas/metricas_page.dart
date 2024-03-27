@@ -1,3 +1,4 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 
 class MetricasPage extends StatelessWidget {
@@ -6,6 +7,7 @@ class MetricasPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(20.0, 0, 20.0, 0),
         child: Center(
@@ -46,7 +48,14 @@ class MetricasPage extends StatelessWidget {
               const SizedBox(height: 50),
               ElevatedButton(
                 onPressed: () {
-                  // Routefly.navigate('/metricas');
+                  FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+                  analytics.logEvent(
+                    name: 'clique_botao_teste',
+                    parameters: <String, String>{
+                      'name': 'botao_teste',
+                      'full_text': 'Botão TESTE',
+                    },
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,

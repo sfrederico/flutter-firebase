@@ -49,7 +49,9 @@ class DefaultFirebaseOptions {
     messagingSenderId: '674153080712',
     projectId: 'flutter-firebase-2c11f',
     authDomain: 'flutter-firebase-2c11f.firebaseapp.com',
+    databaseURL: 'https://flutter-firebase-2c11f-default-rtdb.firebaseio.com',
     storageBucket: 'flutter-firebase-2c11f.appspot.com',
+    measurementId: 'G-WNVDLNSCTQ',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -57,6 +59,7 @@ class DefaultFirebaseOptions {
     appId: '1:674153080712:android:a1b3000a8f26c4ccfbbc3d',
     messagingSenderId: '674153080712',
     projectId: 'flutter-firebase-2c11f',
+    databaseURL: 'https://flutter-firebase-2c11f-default-rtdb.firebaseio.com',
     storageBucket: 'flutter-firebase-2c11f.appspot.com',
   );
 
@@ -65,6 +68,7 @@ class DefaultFirebaseOptions {
     appId: '1:674153080712:ios:99944539b2d51e7dfbbc3d',
     messagingSenderId: '674153080712',
     projectId: 'flutter-firebase-2c11f',
+    databaseURL: 'https://flutter-firebase-2c11f-default-rtdb.firebaseio.com',
     storageBucket: 'flutter-firebase-2c11f.appspot.com',
     androidClientId: '674153080712-efkqa8iho2qmg4k9d6ararc3mklvrl7p.apps.googleusercontent.com',
     iosClientId: '674153080712-ld4k4v54vecf2ejpl9afdfe2vvos2eec.apps.googleusercontent.com',
@@ -76,6 +80,7 @@ class DefaultFirebaseOptions {
     appId: '1:674153080712:ios:ba6bed4d7a538b76fbbc3d',
     messagingSenderId: '674153080712',
     projectId: 'flutter-firebase-2c11f',
+    databaseURL: 'https://flutter-firebase-2c11f-default-rtdb.firebaseio.com',
     storageBucket: 'flutter-firebase-2c11f.appspot.com',
     androidClientId: '674153080712-efkqa8iho2qmg4k9d6ararc3mklvrl7p.apps.googleusercontent.com',
     iosClientId: '674153080712-qigfbe44ftttfq60l0ba5ht6qes2f5d3.apps.googleusercontent.com',
